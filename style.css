@@ -1,0 +1,128 @@
+:root {
+  --primary-color: #FFFFFF;
+  --secondary-color: #A7734A;
+  --background: #212121;
+  --background-lighter: #313131;
+  /* Typography */
+  --font-body: "Inter", sans-serif;
+  --font-color: #ffff;
+  --font-size-body: 14px;
+  --font-size-btn: 16px;
+  --font-weight-normal: 300;
+  --font-weight-bold: 700;
+  /* I-Pad and Web */
+  --font-size-iw-h1: 36px;
+  --font-size-iw-h2: 24px;
+  --font-size--iw-h3: 20px;
+  /* Mobile */
+  --font-size-m-h1: 32px;
+  --font-size-m-h2: 24px;
+  --font-size--m-h3: 16px;
+}
+
+/* VARIABLES */
+.btn-text {
+  font-size: var(--font-size-btn);
+}
+
+body {
+    margin: 0px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: var(--background);
+    /* color: var(--primary-color); */
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    color: var(--font-color);
+    font-weight: var(--font-weight-normal);
+}
+
+
+/* -----HERO SECTION----------------------------------------------------------- */
+.hero-section {
+    height: 802px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 384px, 235px;
+    margin-top: 183px;
+}
+
+/* About me section */
+.about-me {
+    margin-top: 18px;
+}
+
+.about-me h1 {
+    font-size: var(--font-size-iw-h1);
+    font-weight: var(--font-weight-normal);
+}
+
+.about-me span {
+    font-weight: var(--font-weight-bold);
+    margin-top: 15px;
+}
+
+.about-me p {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-size: var(--font-size-body);
+}
+
+.about-me button {
+    height: 53px;
+    width: 192px;
+    border-radius: 6px;
+    background-color: var(--secondary-color);
+    border-style: none;
+    padding: 0px;
+    color: var(--font-color);
+}
+
+/* Portrait section */
+.portrait {
+    display: flex;
+    justify-content: end;
+}
+
+.portrait img {
+    width: 274px;
+    height: 384px;
+}
+
+/* Contact me and arow section */
+.contact-arrow {
+    grid-column: 1 / 3; /* Starts in the first column and spans two columns */
+    grid-row: 2; /* Starts in the second row */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Contact section */
+.contact {
+    margin-top: 91px;
+    margin-bottom: 78px;
+}
+
+.contact h3 {
+    font-size: var(--font-size--iw-h3);
+    margin: 0px;
+}
+
+.contact p {
+    margin-top: 23px;
+    margin-bottom: 0px;
+}
+
+/* arrow section */
+.arrow {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+
+/* -----MAIN SECTION----------------------------------------------------------- */
+/* ----My Work------------------ */
