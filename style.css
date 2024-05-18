@@ -9,6 +9,8 @@
   --font-size-body: 14px;
   --font-size-btn: 16px;
   --font-weight-normal: 300;
+  --font-weight-btn: 400;
+  --font-weight-seminormal: 600;
   --font-weight-bold: 700;
   /* I-Pad and Web */
   --font-size-iw-h1: 36px;
@@ -27,8 +29,6 @@
 
 body {
     margin: 0px;
-    padding-left: 150px;
-    padding-right: 150px;
     background-color: var(--background);
     /* color: var(--primary-color); */
     font-family: var(--font-body);
@@ -37,12 +37,29 @@ body {
     font-weight: var(--font-weight-normal);
 }
 
-
-/* -----HERO SECTION----------------------------------------------------------- */
-.hero-section {
-    height: 802px;
+.btn-style {
+    height: 53px;
+    width: 192px;
+    border-radius: 6px;
+    background-color: var(--secondary-color);
+    border-style: none;
+    padding: 0px;
+    color: var(--font-color);
+    margin: 0px;
+    font-weight: var(--font-weight-btn);
 }
 
+.margin-sides {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.img-style {
+    width: 406px;
+    height: 268px;
+}
+
+/* -----HERO SECTION----------------------------------------------------------- */
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -71,16 +88,6 @@ body {
     font-size: var(--font-size-body);
 }
 
-.about-me button {
-    height: 53px;
-    width: 192px;
-    border-radius: 6px;
-    background-color: var(--secondary-color);
-    border-style: none;
-    padding: 0px;
-    color: var(--font-color);
-}
-
 /* Portrait section */
 .portrait {
     display: flex;
@@ -98,13 +105,19 @@ body {
     grid-row: 2; /* Starts in the second row */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    height: 235px;
+}
+
+.contact-arrow .arrow {
+    height: 108px;
 }
 
 /* Contact section */
-.contact {
+/* .contact {
     margin-top: 91px;
     margin-bottom: 78px;
-}
+} */
 
 .contact h3 {
     font-size: var(--font-size--iw-h3);
@@ -117,12 +130,173 @@ body {
 }
 
 /* arrow section */
-.arrow {
+/* .arrow {
     display: flex;
     justify-content: start;
     align-items: end;
-}
+} */
 
 
 /* -----MAIN SECTION----------------------------------------------------------- */
+main {
+    height: 1809px;
+}
 /* ----My Work------------------ */
+.my-work {
+    height: 815px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-lighter);
+}
+
+.my-work img {
+    width: 518px;
+    height: 713px;
+    margin-top: 62px;
+    margin-bottom: 40px;
+}
+
+.my-work-item-1 {
+    margin-top: 110px;
+    margin-bottom: 509px;
+}
+
+.my-work-item-1 h1 {
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-iw-h1);
+    margin: 0px;
+}
+
+.my-work-item-1 .span {
+    font-weight: var(--font-weight-bold);
+    margin-top: 15px;
+}
+
+.my-work-item-1 button {
+    margin-top: 40px;
+}
+
+
+/* ----My Skills------------------ */
+/* Title and arrow */
+.my-skills {
+    height: 994px;
+    display: flex;
+    flex-direction: column;
+}
+
+.arrow-title {
+    margin-top: 109px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-title .title {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: end;
+}
+
+.arrow-title h1 {
+    font-weight: var(--font-weight-normal);
+    font-size: var(--font-size-iw-h2);
+    margin: 0px;
+}
+
+.arrow-title .span {
+    font-weight: var(--font-weight-bold);
+}
+
+.arrow-title button {
+    margin-top: 40px;
+}
+
+.arrow-title img {
+    height: 82px;
+}
+
+/* Web Development */
+.web-development {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    gap: 140px;
+}
+
+.web-development-text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: start;
+}
+
+.web-development-text h2 {
+    margin: 0px;
+    font-weight: var(--font-weight-seminormal);
+}
+
+
+.web-development-text p {
+    margin-top: 40px;
+    margin-bottom: 44px;
+    text-align: right;
+}
+
+.web-development-text button {
+    margin-top: 0px;
+}
+
+/* UI/UX Design */
+.ui-ux-design {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 140px;
+    margin-bottom: 40px;
+}
+
+.ui-ux-design-text {
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.ui-ux-design-text h2 {
+    margin: 0px;
+    font-weight: var(--font-weight-seminormal);
+}
+
+
+.ui-ux-design-text p {
+    margin-top: 40px;
+    margin-bottom: 44px;
+}
+
+.ui-ux-design-text button {
+    margin-top: 0px;
+}
+
+
+/* -----FOOTER SECTION----------------------------------------------------------- */
+footer {
+    height: 294px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-lighter);
+    gap: 40px;
+    padding: 10px 0px 10px 0px;
+}
+
+footer p, footer h1 {
+    margin: 0px;
+}
+
+footer h1 {
+    font-size: var(--font-size-iw-h1);
+    font-weight: var(--font-weight-bold);
+}

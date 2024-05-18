@@ -11,6 +11,7 @@
     # pkgs.python311Packages.pip
     # pkgs.nodejs_20
     # pkgs.nodePackages.nodemon
+    pkgs.pkgs.gh # Add pkgs.gh to the list of packages
   ];
 
   # Sets environment variables in the workspace
