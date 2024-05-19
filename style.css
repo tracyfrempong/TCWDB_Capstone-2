@@ -290,7 +290,7 @@ footer h1 {
 
 
 /* ---IPAD/TABLETS------------------------------------------- */
-@media screen and (min-width: 481px) and (max-width: 834px) {
+@media screen and (min-width: 834px) and (max-width: 1279px) {
     /* Variables */
     .margin-sides {
         padding-left: 50px;
@@ -308,7 +308,7 @@ footer h1 {
     }
   /* Main > Work */
     .my-work {
-        height: 634px;
+        height: auto;
     }
 
     .my-work img {
@@ -347,7 +347,7 @@ footer h1 {
 }
 
 /* ---MOBILE------------------------------------------- */
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 833px) {
     /* ----VARIABLES------------------------------------- */
     .margin-sides {
         padding-left: 30px;
@@ -477,6 +477,9 @@ footer h1 {
 
     .my-work-item-2 {
         margin-bottom: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /* MY SKILLS---------- */
